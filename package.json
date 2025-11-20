@@ -1,0 +1,20 @@
+{
+  "name": "http1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "http1": "node servers/http1-server.js",
+    "http2": "node servers/http2-server.js",
+    "http2-push": "node servers/http2-push-server.js",
+    "all": "concurrently \"npm run http1\" \"npm run http2\" \"npm run http2-push\"",
+    "benchmark": "node clients/benchmark.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
