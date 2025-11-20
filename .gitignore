@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+node_modules/
+*.pem
+*.log
+*.qlog
+.DS_Store
+.env
+results/*.png
+results/*.har
+logs/*.pcap
